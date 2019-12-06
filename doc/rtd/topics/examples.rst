@@ -4,6 +4,19 @@
 Cloud config examples
 *********************
 
+Organizing configuration files
+==========================
+You can place the configuration either in the single file
+``/etc/cloud/cloud.cfg`` or in the directory ``/etc/cloud/cloud.cfg.d/*``.
+
+Finding configuration examples beyond this site
+==========================
+Besides examples on this site, check for a default and comprehensive latest distro-specific file example by installing the package cloud-init in a Docker container without providing your own configuration. Also different cloud and virtualization providers offer their platform specific configuration.
+
+The snippets in ``/etc/cloud/cloud.cfg.d/`` will override the config in
+the ``/etc/cloud/cloud.cfg``; later snippets in the config directory will override earlier
+ones as sorted by their name.
+
 Including users and groups
 ==========================
 
