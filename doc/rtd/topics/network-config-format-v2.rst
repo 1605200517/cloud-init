@@ -20,12 +20,12 @@ To disable networking, for example the following could be present in
     version: 2
     ethernets: []
     
-The official netplan site suggests for a default DHCP configuration the following snippet:
-  
+The official netplan site suggests for a default DHCP configuration the following snippet::
+
   network:
    version: 2
    renderer: NetworkManager
-  
+   
 It may also be provided in other locations including the
 :ref:`datasource_nocloud`, see :ref:`default_behavior` for other places.
 
